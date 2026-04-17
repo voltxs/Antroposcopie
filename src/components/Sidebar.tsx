@@ -1,6 +1,6 @@
 "use client";
 
-import { LayoutGrid, Network, ShieldAlert } from "lucide-react";
+import { LayoutGrid, Network, ShieldAlert, BookOpen } from "lucide-react";
 
 interface SidebarProps {
   activeTab: string;
@@ -10,6 +10,7 @@ interface SidebarProps {
 export default function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
   const navItems = [
     { id: "hub", label: "Project Hub", icon: LayoutGrid },
+    { id: "philosophy", label: "Philosophie", icon: BookOpen },
     { id: "observatory", label: "Observatoire", icon: Network },
     { id: "vault", label: "Vault & Kill-Switch", icon: ShieldAlert },
   ];

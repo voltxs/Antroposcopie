@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Sidebar from "@/components/Sidebar";
 import Hub from "@/components/Hub";
+import Philosophy from "@/components/Philosophy";
 import Vault from "@/components/Vault";
 import Observatory from "@/components/Observatory";
 
@@ -21,6 +22,7 @@ export default function Home() {
         
         <div className="flex-1 overflow-y-auto w-full relative z-10 flex">
           {activeTab === "hub" && <Hub />}
+          {activeTab === "philosophy" && <Philosophy />}
           {activeTab === "vault" && <Vault />}
           {activeTab === "observatory" && <Observatory />}
         </div>
